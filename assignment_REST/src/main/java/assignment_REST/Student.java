@@ -12,7 +12,7 @@ public class Student {
 		super();
 		this.stuID = id;
 		this.lastName = lastName;
-		this.lastName = lastName;
+		this.firstName = firstName;
 	}
 
 	public String getStudentID() {
@@ -23,20 +23,20 @@ public class Student {
 		this.stuID = stuID;
 	}
 
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
 	public String getLastName() {
 		return lastName;
 	}
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 }
