@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAO {
-	private String jdbcURL = "jdbc:mariadb://mariadb.vamk.fi/e2101064_java";
+	private String jdbcURL = "jdbc:mariadb://mariadb.vamk.fi:3306/e2101064_java";
 	private String jdbcUserName = "e2101064";
 	private String jdbcPassword = "DuTWee4pXG5";
 
