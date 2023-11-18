@@ -36,8 +36,8 @@ package assignment_REST;
 		}
 		
 		// Get users
-		// GET/RestAPI/users/
-		// GET/RestAPI/users/id 
+		// GET/RestAPI/students/
+		// GET/RestAPI/students/Stuid 
 		@Override
 		protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 			String pathInfo = req.getPathInfo();
@@ -46,8 +46,8 @@ package assignment_REST;
 			
 			// Return all users
 			if(pathInfo == null || pathInfo.equals("/")) {
-				List<Student> users = studentDAO.selectAllStudents();
-				sendAsJSON(res, users);
+				List<Student> student = studentDAO.selectAllStudents();
+				sendAsJSON(res, student);
 				return;
 			}
 			
