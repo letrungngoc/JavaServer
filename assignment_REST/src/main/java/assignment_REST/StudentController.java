@@ -35,16 +35,16 @@ package assignment_REST;
 			out.flush();
 		}
 		
-		// Get users
-		// GET/RestAPI/students/
-		// GET/RestAPI/students/Stuid 
+		// Get student
+		// GET/RestAPI/student/
+		// GET/RestAPI/student/id 
 		@Override
 		protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 			String pathInfo = req.getPathInfo();
 			
 			res.addHeader("Access-Control-Allow-Origin", "//mariadb.vamk.fi/e2101064_java");
 			
-			// Return all students
+			// Return all student
 			if(pathInfo == null || pathInfo.equals("/")) {
 				List<Student> student = studentDAO.selectAllStudents();
 				sendAsJSON(res, student);
