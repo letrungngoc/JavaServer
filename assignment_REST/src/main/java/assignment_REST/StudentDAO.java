@@ -24,9 +24,9 @@ public class StudentDAO {
 	}
 
 	private static final String SELECT_ALL_USERS_QUERY = "SELECT * FROM students";
-	private static final String SELECT_USER_BY_ID = "SELECT * FROM students WHERE stuID=?";
+	private static final String SELECT_USER_BY_ID = "SELECT * FROM students WHERE id=?";
 	private static final String INSERT_USER_QUERY = "INSERT INTO students (id, lastName, firstname) VALUES (?, ?, ?)";
-	private static final String DELETE_USER_QUERY = "DELETE FROM students WHERE stuID=?";
+	private static final String DELETE_USER_QUERY = "DELETE FROM students WHERE id=?";
 
 	protected Connection getConnection() {
 		Connection conn = null;
