@@ -11,7 +11,7 @@ import java.util.List;
 public class StudentDAO {
 	private String jdbcURL = "jdbc:mariadb://mariadb.vamk.fi:3306/e2101064_java";
 	private String jdbcUserName = "e2101064";
-	private String jdbcPassword = "DuTWee4pXG5";
+	private String jdbcPassword = "ZGR47fz3kdT";
 
 	// Constructors
 	public StudentDAO(String url, String userName, String password) {
@@ -81,8 +81,8 @@ public class StudentDAO {
 			ResultSet rs = ps.executeQuery();
 
 			if (rs.next()) {
-				String lastName = rs.getString("firstName");
-				String firstName = rs.getString("lastName");
+				String lastName = rs.getString("lastName");
+				String firstName = rs.getString("firstName");
 				
 
 				student = new Student(id, lastName, firstName);
