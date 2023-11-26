@@ -44,7 +44,7 @@ package assignment_REST;
 			
 			res.addHeader("Access-Control-Allow-Origin", "//mariadb.vamk.fi/e2101064_java");
 			
-			// Return all users
+			// Return all students
 			if(pathInfo == null || pathInfo.equals("/")) {
 				List<Student> student = studentDAO.selectAllStudents();
 				sendAsJSON(res, student);
