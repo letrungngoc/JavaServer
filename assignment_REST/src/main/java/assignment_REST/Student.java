@@ -19,7 +19,7 @@ public class Student {
 		return stuID;
 	}
 
-	public void setUserID(String stuID) {
+	public void setStudentID(String stuID) {
 		this.stuID = stuID;
 	}
 
